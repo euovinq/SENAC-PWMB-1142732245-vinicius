@@ -1,33 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="projetos.css">
     <title>Projetos</title>
 </head>
-<body>
-    <div id="card">
-        <h1>Projeto 1</h1>
-        <p>06/07/2023</p>
-        <button>
-            <p>Detalhes</p>
-        </button>
-    </div>
-    <div id="card">
-        <h1>Projeto 1</h1>
-        <p>06/07/2023</p>
-        <button>
-            <p>Detalhes</p>
-        </button>
-    </div>
-    <div id="card">
-        <h1>Projeto 1</h1>
-        <p>06/07/2023</p>
-        <button>
-            <p>Detalhes</p>
-        </button>
-    </div>
 
+<body>
+    <div id="container">
+        <div id="card">
+            <h1>Projeto 1</h1>
+            <p>06/07/2023</p>
+            <button id="botao">
+                <p>Detalhes</p>
+            </button>
+        </div>
+        <div id="card">
+            <h1>Projeto 1</h1>
+            <p>06/07/2023</p>
+            <button>
+                <p>Detalhes</p>
+            </button>
+        </div>
+        <div id="card">
+            <h1>Projeto 1</h1>
+            <p>06/07/2023</p>
+            <button>
+                <p>Detalhes</p>
+            </button>
+        </div>
+        <div id="card">
+            <h1>Projeto 1</h1>
+            <p>06/07/2023</p>
+            <button>
+                <p>Detalhes</p>
+            </button>
+        </div>
+        <div id="card">
+            <h1>Projeto 1</h1>
+            <p>06/07/2023</p>
+            <button>
+                <p>Detalhes</p>
+            </button>
+        </div>
+        <div id="card">
+            <h1>Projeto 1</h1>
+            <p>06/07/2023</p>
+            <button>
+                <p>Detalhes</p>
+            </button>
+        </div>
+        <div id="card">
+            <h1>Projeto 1</h1>
+            <p>06/07/2023</p>
+            <button>
+                <p>Detalhes</p>
+            </button>
+        </div>
+        <div id="card">
+            <h1>Projeto 1</h1>
+            <p>06/07/2023</p>
+            <button>
+                <p>Detalhes</p>
+            </button>
+        </div>
+        <div id="card">
+            <h1>Projeto 1</h1>
+            <p>06/07/2023</p>
+            <button>
+                <p>Detalhes</p>
+            </button>
+        </div>
+    </div>
+    <dialog id="modal">
+        <div id="conteudo-modal">
+            <span class="close" id="closeModalBtn">&times;</span>
+        </div>
+    </dialog>
+<script>
+    const botao = document.querySelector('button');
+    var modal = document.querySelector('dialog');
+    var fecharModal = document.querySelector('span');
+
+    botao.onclick = function () {
+
+        modal.showModal();
+}
+    fecharModal.onclick = () => modal.close();
+</script>
 </body>
+
 </html>

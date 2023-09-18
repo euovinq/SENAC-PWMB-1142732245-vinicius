@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>Início</title>
+    <script>
+        var url = new URL(window.location.href);
+        var valor = url.searchParams.get('usuario_logado');
+
+        if (valor != 'true') {
+            window.location.href = ('login.html');
+        }
+    </script>
 </head>
 
 <body>
-    <header>     
-        <a href="/" id="logo">ConstruTech</a>
-    <nav>
-        
-        <a href="projetos.html" target="centro">Projetos</a>
-        <a href="contato.html" target="centro">Suporte</a>
-         
-    </nav>
-</header>
-    <main>
-        <iframe src="projetos.html" frameborder="0" name="centro"></iframe>
-    </main>
-    <footer>
-        <p>Site feito por Vinícius</p>
-    </footer>
+    <div id="container">
+        <header>
+            <a href="index.html?usuario_logado=true" id="logo">ConstruTech</a>
+            <nav>
+
+                <a href="projetos.html" target="centro">Projetos</a>
+                <a href="contato.html" target="centro">Suporte</a>
+
+            </nav>
+        </header>
+        <main>
+            <iframe src="projetos.html" frameborder="0" name="centro"></iframe>
+            
+        </main>
+        <footer>
+            <p>Site feito por Vinícius</p>
+        </footer>
+    </div>
+    
 </body>
+
 </html>
